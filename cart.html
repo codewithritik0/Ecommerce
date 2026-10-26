@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+
+        <script
+            src="https://kit.fontawesome.com/0d339be604.js"
+            crossorigin="anonymous"
+        ></script>
+
+        <link rel="stylesheet" href="assets/CSS/style.css" />
+    </head>
+    <body>
+        <header>
+            <input type="checkbox" name="" id="toggler" />
+
+            <label for="toggler" class="fas fa-bars"></label>
+
+            <a href="index.html" class="logo">Store <span>.</span></a>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="products.html">Products</a>
+                <a href="contact.html">contact</a>
+            </nav>
+
+            <nav class="icons">
+                <a href="cart.html"
+                    ><i class="fa-solid fa-cart-shopping"></i>
+                </a>
+            </nav>
+        </header>
+
+        <!-- cart section -->
+
+        <section class="cart container mt-5 my-3 py-5">
+            <div class="container mt-5">
+                <h2 class="font-weight-bold">your Cart</h2>
+                <hr />
+            </div>
+
+            <table class="mt-5 pt-5">
+                <tr>
+                    <th>Product</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+
+                <tr>
+                    <td>
+                        <div class="product-info">
+                            <img src="assets/imgs/product1.jpg" alt="" />
+                            <div>
+                                <p>Lamp</p>
+                                <small><span>$</span>84</small>
+                                <form>
+                                    <input
+                                        type="submit"
+                                        class="remove-btn"
+                                        value="remove"
+                                    />
+                                </form>
+                            </div>
+                        </div>
+                    </td>
+
+                    <td>
+                        <form>
+                            <input type="number" value="1" />
+                            <input
+                                type="submit"
+                                class="edit-btn"
+                                value="edit"
+                            />
+                        </form>
+                    </td>
+
+                    <td>
+                        <span class="product-price">$84</span>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="cart-total">
+                <table>
+                    <tr>
+                        <td>total</td>
+                        <td>$84</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="checkout-container">
+                <form action="checkout.html">
+                    <input
+                        type="submit"
+                        class="checkout-btn"
+                        value="Checkout"
+                    />
+                </form>
+            </div>
+        </section>
+
+        <!-- footer section -->
+
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3>quicks links</h3>
+                    <a href="index.html">Home</a>
+                    <a href="About.html">About</a>
+                    <a href="products.html">Products</a>
+                    <a href="#review">Review</a>
+                    <a href="contact.html">contact</a>
+                </div>
+
+                <div class="box">
+                    <h3>extra links</h3>
+                    <a href="cart.html">cart</a>
+                    <a href="products.html">products</a>
+                    <a href="#">special offers</a>
+                </div>
+
+                <div class="box">
+                    <h3>Location</h3>
+                    <p>India</p>
+                    <p>Japan</p>
+                    <p>New York</p>
+                </div>
+
+                <div class="box">
+                    <h3>Contact Info</h3>
+                    <p>+123 456 7890</p>
+                    <p>info@email.com</p>
+                </div>
+            </div>
+
+            <div class="credit">
+                created by <span>NOBODY</span>| all right reserved to nobody
+            </div>
+        </section>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
